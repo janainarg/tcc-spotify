@@ -1,0 +1,23 @@
+.top-artists {
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    text-align: center;
+    width: 100%;
+    background-color: #1db954;
+}
+
+.title {
+    font-weight: bold;
+    color: #000;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
