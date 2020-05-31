@@ -7,7 +7,7 @@ export function TopArtists() {
 
     const [itemsSpotify, setItemsSpotify] = useState([]);
 
-    useEffect(()=> {
+    useEffect(() => {
         axios({
             method: 'get',
             url: 'https://api.spotify.com/v1/me/top/artists?time_range=medium_term&limit=10&offset=5',
@@ -17,9 +17,9 @@ export function TopArtists() {
         }).then(function (response) {
             setItemsSpotify(response.data.items);
         });
-    },[])
+    }, [])
 
-   
+
 
     function getHashParams() {
         var hashParams = {};
@@ -47,7 +47,16 @@ export function TopArtists() {
                 </h1>
             </section>
             {renderCards()}
+            <div className="checkbox">
+                <input type="checkbox"></input>
+                 Aceito utilizar dos meus artistas favoritos para personalizar 
+                 a sugestão de músicas.
+            </div>
+            <button className="button-confirm">
+                <a className="title">
+                    Confirmar
+                </a>
+            </button>
         </div>
-
     )
 }

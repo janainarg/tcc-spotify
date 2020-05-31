@@ -1,18 +1,17 @@
 import React from 'react';
+import './login.css';
 
 export function Login() {
 
     return (
-        <div>
-           <h1>
-               Login
-           </h1>
-             <button>
-                <a href="http://localhost:8888">
-                    Logar
+        <div className="login-page">
+                <button className="button">
+                <a className="title" 
+                    href="http://localhost:8888/login">
+                    Log in com Spotify
                 </a>
-            </button>
-        </div>
+                </button>
+           </div>
 
     )
 }
