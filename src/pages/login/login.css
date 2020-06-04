@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
 .login-page {
     background-image: url("../../capa.jpg");
     background-position-x: center;
@@ -5,13 +7,14 @@
     background-size: cover;
     width: 100vw;
     height: 86vh;
+    font-family: 'Comfortaa', cursive;
 }
 
 .button {
     background-color: #1db954; 
     border: none;
     color: rgb(8, 8, 8);
-    padding: 15px 32px;
+    padding: 15px 15px;
     font-size: 14px;
     border-radius: 50px;
     position: absolute;

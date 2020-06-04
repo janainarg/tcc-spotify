@@ -46,16 +46,17 @@ export function TopArtists() {
                     Meus artistas favoritos
                 </h1>
             </section>
-            {renderCards()}
-            <div className="checkbox">
+            <div className="checkbox-text">
                 <input type="checkbox"></input>
-                 Aceito utilizar dos meus artistas favoritos para personalizar 
+                 Aceito utilizar meus artistas favoritos apresentados abaixo para personalizar
                  a sugestão de músicas.
-            </div>
+                    </div>
+            {renderCards()}
             <button className="button-confirm">
-                <a className="title">
+                <a className="title"
+                    href="/completed">
                     Confirmar
-                </a>
+                    </a>
             </button>
         </div>
     )
